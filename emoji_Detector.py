@@ -22,7 +22,6 @@ def send_telegram_message(message):
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 emotion_model = load_model('emotion_model.h5', compile=False)
 
-# ========== Labels and Emoji Map ==========
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 emoji_map = {
     'Angry': '😠',
